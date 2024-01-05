@@ -2,12 +2,20 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [value, setValue] = useState(670);
+  const [value, setValue] = useState(6);
   const addValue = () => {
-    setValue(value + 10);
+    if (value <= 20) {
+      setValue(value + 1);
+    } else {
+      alert("You can't add more than 50");
+    }
   };
   const subValue = () => {
-    setValue(value - 10);
+    if (value > 0) {
+      setValue(value - 1);
+    } else {
+      alert("You can't go below zero");
+    }
   };
   return (
     <>
