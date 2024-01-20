@@ -2,12 +2,12 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [value, setValue] = useState(6);
+  const [value, setValue] = useState(9);
   const addValue = () => {
     if (value <= 20) {
       setValue(value + 1);
     } else {
-      alert("You can't add more than 50");
+      alert("You can't add more than 21");
     }
   };
   const subValue = () => {
