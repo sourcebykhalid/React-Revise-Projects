@@ -1,6 +1,15 @@
 import "./App.css";
 import Card from "./Components/Card";
+import { useState } from "react";
 function App() {
+  const [counter, setCounter] = useState(45);
+
+  const addVal = () => {
+    setCounter(counter + 5);
+  };
+  const removeVal = () => {
+    setCounter(counter - 5);
+  };
   return (
     <>
       <h1>Hello React</h1>
@@ -18,6 +27,22 @@ function App() {
         username="Card3"
         btn="Visit me!"
       />
+      <h2 className="bg-black mt-3 p-8 text-3xl text-gray-100 w-1/2 ml-80 font-bold">
+        Counter value: {counter}
+      </h2>
+      <button
+        className=" m-3 bg-red-400 p-3 rounded-md font-bold"
+        onClick={addVal}
+      >
+        Add{" "}
+      </button>
+      <br />
+      <button
+        className=" m-3 bg-red-400 p-3 rounded-md font-bold"
+        onClick={removeVal}
+      >
+        remove
+      </button>
     </>
   );
 }
