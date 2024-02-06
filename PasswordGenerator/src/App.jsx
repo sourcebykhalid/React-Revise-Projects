@@ -33,7 +33,7 @@ function App() {
 
   return (
     <>
-      <h1 className="bg-black text-center text-gray-400 font-bold text-2xl  mt-2 w-full max-w-lg ml-96 py-2 shadow-xl rounded-lg shadow-slate-400 hover:bg-orange-400 cursor-pointer">
+      <h1 className="bg-black text-center text-gray-400 font-bold text-2xl  mt-2 w-full max-w-lg ml-96 py-2 shadow-xl rounded-md shadow-slate-400 hover:bg-orange-400 cursor-pointer">
         Password Generator
       </h1>
       <div className="bg-orange-400 w-full max-w-lg ml-96 rounded-lg shadow-lg shadow-gray-100 py-4 px-6 mt-12 pb-24 font-bold">
